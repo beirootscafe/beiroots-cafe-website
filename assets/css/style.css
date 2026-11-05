@@ -174,6 +174,16 @@ p {
     width: 100%;
 }
 
+.nav-order {
+    padding: 10px 17px;
+    border-radius: 50px;
+    background: var(--gold);
+    color: var(--white) !important;
+    font-weight: 600 !important;
+}
+.nav-order:hover { background: #b48245; color: var(--white) !important; }
+.nav-order::after { display: none; }
+
 .nav-review {
     padding: 10px 17px;
     border-radius: 50px;
@@ -294,6 +304,16 @@ p {
     font-weight: 600;
     transition: var(--transition);
     border: 2px solid transparent;
+}
+
+.btn-order {
+    background: var(--green);
+    color: var(--white);
+}
+.btn-order:hover {
+    transform: translateY(-2px);
+    background: var(--green-dark);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
 .btn-primary {
@@ -753,6 +773,19 @@ p {
 
 .floating-actions a:hover {
     transform: translateY(-3px) scale(1.04);
+}
+
+.floating-order {
+    width: auto !important;
+    min-width: 132px;
+    height: 48px !important;
+    padding: 0 18px;
+    border-radius: 50px !important;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .floating-call {
